@@ -24,3 +24,6 @@ firebase.json
 .firebaserc
 
 *.swp
+
+# my own notes and organization while building project
+/buildsteps
