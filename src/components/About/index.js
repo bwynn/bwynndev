@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import Headline from '../Headline'
 
 export default class About extends Component {
   render () {
     return (
-      <div>
-      <h1>About Me!</h1>
-      <a href='/'>
-        Home
-      </a>
-      </div>
+      <section className='about'>
+        <Headline
+          hType='page-title'
+          title='About Me'
+        />
+      </section>
     );
   }
 }

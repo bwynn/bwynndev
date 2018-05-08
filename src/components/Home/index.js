@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import Headline from '../Headline';
 import './style.css';
 
-export default class App extends Component {
+export default class Home extends Component {
   render() {
     return (
-      <div>
-        <header>
-          <h1>Brian Wynn</h1>
-        </header>
-        <p>
-          <a href='/about'>About</a>
-        </p>
-      </div>
+      <section className='home'>
+        <Headline
+          title='Welcome to bwynn.io'
+          hType='page-title'
+        />
+      </section>
     );
   }
 }
