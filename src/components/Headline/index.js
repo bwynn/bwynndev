@@ -1,8 +1,18 @@
+// @flow
 import React, { Component } from 'react';
-
 import './style.css';
 
-export default class Headline extends Component {
+type Props = {
+  hType: string,
+  title: string
+};
+
+export default class Headline extends Component<Props> {
+  static defaultProps = {
+    hType: 3,
+    title: 'Please Enter a Default Title'
+  }
+
   assignTitle () {
     const {
       hType,

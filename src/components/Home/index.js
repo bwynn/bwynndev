@@ -1,8 +1,9 @@
+// @flow
 import React, { Component } from 'react';
 import Headline from '../Headline';
 import './style.css';
 
-export default class Home extends Component {
+export default class Home extends Component<{}> {
   render() {
     return (
       <section className='home'>

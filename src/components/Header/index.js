@@ -1,7 +1,12 @@
-import React, { Component } from 'react';
+// @flow
+import * as React from 'react';
 import './style.css';
 
-export default class Header extends Component {
+type Props = {
+  children?: React.Node, // not necessary to render
+};
+
+export default class Header extends React.Component<Props> {
   render () {
     return (
       <header className='header'>

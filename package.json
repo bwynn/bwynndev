@@ -4,15 +4,21 @@
   "private": true,
   "homepage": "https://www.bwynn.io",
   "dependencies": {
+    "flow-bin": "^0.71.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "flow": "flow",
+    "start": "npm run flow && react-scripts start",
+    "build": "yarn run flow && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0"
   }
 }

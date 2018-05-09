@@ -1,8 +1,10 @@
+// @flow
 import React, { Component } from 'react';
-import Headline from '../Headline'
+import Headline from '../Headline';
+import './style.css';
 
-export default class About extends Component {
-  render () {
+export default class About extends Component<{}> {
+  render() {
     return (
       <section className='about'>
         <Headline
@@ -13,3 +15,4 @@ export default class About extends Component {
     );
   }
 }
+
