@@ -15,7 +15,7 @@ ReactDOM.render(
   <Router>
     <div className='app'>
       <Header>
-        <Headline title='Brian Wynn' hType='main' />
+        <Headline title='bwynn.io' hType='main' />
       </Header>
       <main>
         <Route exact path='/' component={Home} />
